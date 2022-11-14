@@ -8,6 +8,7 @@
 body {
   background: #222f3e;
   font-family: sans-serif;
+  height: 100%;
 }
 
 .navMenu {
@@ -65,13 +66,14 @@ body {
 .page{
   box-sizing: border-box;
   height: 100vh;
+  background-color: blue;
   position: sticky;
   bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  box-shadow: 0 10px 15px #00000060;
+/*  box-shadow: 0 10px 15px #00000060;*/
 }
 .page .window{
   text-decoration: none;
@@ -79,6 +81,7 @@ body {
 }
 .fs {
   z-index: 5;
+  height: 100vh;
   background-color: #222f3e;
   background-size: cover;
   background-position: center;
@@ -86,9 +89,9 @@ body {
 }
 .sc {
   background-color: #10ac84;
+  height: 100vh;
   z-index: 4;
   background-size: cover;
-  background-position: 0% 70%;
   background-repeat: no-repeat;
 }
 
@@ -96,12 +99,17 @@ body {
   color: black;
 }
 
-.fr .window{
-  color: black;
+.th {
+  background-color: #222f3e;
+  height: 100vh;
+  z-index: 3;
+  background-size: cover;
+  background-position: 0% 70%;
+  background-repeat: no-repeat;
 }
 
 .window{
-	width: 800px;
+	max-width: 800px;
 	margin: 0 auto;
 }
 
@@ -109,7 +117,6 @@ img{
 	height: 200px;
 	width: 200px;
 }
-
 
 /*=================================*/
 
@@ -171,8 +178,8 @@ main {
 	
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(var(--numcards), var(--card-height));
-	gap: var(--card-margin);
+/*	grid-template-rows: repeat(var(--numcards), var(--card-height));*/
+/*	gap: var(--card-margin);*/
 }
 
 .card {
@@ -217,17 +224,17 @@ main {
 	object-fit: cover;
 }
 
-h1 {
+.h1 {
 	font-weight: 300;
 	font-size: 3.5em;
 }
 
-h2 {
+.h2 {
 	font-weight: 300;
 	font-size: 2.5em;
 }
 
-p {
+.p {
 	font-family: sans-serif;
 	font-weight: 300;
 	line-height: 1.42;
@@ -252,12 +259,6 @@ p {
   margin: auto;
 }
 
-@media (min-width: 500px) {
-  .ul {
-    grid-auto-flow: column;
-  }
-}
-
 .a {
   color: white;
   text-decoration: none;
@@ -280,4 +281,34 @@ p {
   background-color: #10ac84;
   line-height: 1.3;
   font-family: Menlo, monospace;
+}
+
+/*======================================*/
+/*RESPONSIVE CODE*/
+/*======================================*/
+
+@media only screen and (max-width: 800px ) {
+  .page{
+  width: 144vh;
+  height: 280vh;
+	}
+
+  .head{
+  	width: 144vh;
+  }
+
+  .card{
+  	width: 100vh;
+  	margin-left: 17.5%;
+  }
+
+  .foot{
+  	width: 144vh;
+  }
+}
+
+@media (min-width: 500px) {
+  .ul {
+    grid-auto-flow: column;
+  }
 }
