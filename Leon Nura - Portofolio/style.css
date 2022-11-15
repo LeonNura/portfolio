@@ -226,6 +226,7 @@ main {
 .h1 {
 	font-weight: 300;
 	font-size: 3.5em;
+  color: #efefff;
 }
 
 .h2 {
@@ -237,6 +238,7 @@ main {
 	font-family: sans-serif;
 	font-weight: 300;
 	line-height: 1.42;
+  color: #efefff;
 }
 
 .btn {
