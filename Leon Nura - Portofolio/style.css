@@ -73,7 +73,6 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-/*  box-shadow: 0 10px 15px #00000060;*/
 }
 .page .window{
   text-decoration: none;
@@ -304,6 +303,18 @@ main {
 
   .foot{
   	width: 144vh;
+  }
+
+  .card__content > div {
+    grid-area: text;
+    width: 80%;
+    height: 150vh;
+    place-self: center;
+    text-align: left;
+  
+    display: grid;
+    gap: 1em;
+    place-items: start;
   }
 }
 
