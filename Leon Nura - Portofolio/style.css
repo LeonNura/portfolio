@@ -317,6 +317,21 @@ main {
     gap: 1em;
     place-items: start;
   }
+
+  .content_img{
+    width: 500px; 
+    margin: 0 auto;
+  }
+
+  .window{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  main{
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 500px) {
